@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NestZ Brand — Timeless Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- PayPal JavaScript SDK (Replace 'test' with your Live Client ID before publishing) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Left Sidebar Navigation (Inspired by reference layout) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <a href="#home" class="brand-logo" data-route="home" aria-label="NestZ Brand Home">
+          <img 
+            src="https://i.imgur.com/Ba6BQbk.png" 
+            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 40%22><rect width=%22120%22 height=%2240%22 rx=%2210%22 fill=%22%23161618%22/><text x=%2260%22 y=%2225%22 font-family=%22sans-serif%22 font-size=%2216%22 font-weight=%22bold%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>NestZ</text></svg>';"
+            alt="NestZ Brand Logo" 
+            class="nav-logo-img"
+          />
+          <span class="brand-title">NestZ Brand</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <button class="nav-item active" data-route="home">
+            <span class="nav-icon">⊞</span> Home
+          </button>
+          <button class="nav-item" data-route="about">
+            <span class="nav-icon">◈</span> About
+          </button>
+          <button class="nav-item" data-route="contact">
+            <span class="nav-icon">✉</span> Contact
+          </button>
+          <button class="nav-item" data-route="checkout">
+            <span class="nav-icon">◈</span> Shop Drop ($10)
+          </button>
+        </nav>
+
+        <div class="sidebar-section">
+          <p class="sidebar-label">SOCIAL & DIRECT</p>
+          <a href="tel:+9768847922*" class="nav-link-external">
+            <span class="nav-icon">☏</span> +9768847922*
+          </a>
+          <a href="https://www.facebook.com/share/1DSeUo43az/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="nav-link-external">
+            <span class="nav-icon">f</span> Facebook
+          </a>
+          <a href="https://www.instagram.com/nestz.brand?bqrl=bnR1OXF6bWRuaGRy&utm_source=qr" target="_blank" rel="noopener noreferrer" class="nav-link-external">
+            <span class="nav-icon">◎</span> Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="delivery-badge">
+          <span class="pulse-dot"></span>
+          <span>21 Аймагт 24/7 Хүргэлттэй</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Workspace Area -->
+    <div class="main-wrapper">
+      <!-- Sticky Top Header -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+          <h1 class="page-greeting" id="topbarTitle">Welcome to NestZ Brand</h1>
+        </div>
+        <div class="topbar-actions">
+          <a href="tel:+9768847922*" class="pill-btn secondary-pill">
+            ☏ +9768847922*
+          </a>
+          <button class="pill-btn primary-pill" data-route="checkout">
+            + Order Drop ($10)
+          </button>
+        </div>
+      </header>
+
+      <!-- Dynamic Route Views -->
+      <main class="content-area" id="appContent">
+        
+        <!-- ==================== HOME PAGE ==================== -->
+        <section id="view-home" class="route-view active">
+          <div class="bento-grid-top">
+            <!-- Dark Hero Card (Inspired by Overall Information card) -->
+            <div class="card card-dark reveal">
+              <div class="card-header">
+                <span class="card-eyebrow">NESTZ EXCLUSIVE COLLECTION</span>
+                <span class="badge-light">2026 DROP</span>
+              </div>
+              <h2 class="hero-heading">Minimalist Streetwear Crafted for Everyday Luxury.</h2>
+              <p class="hero-subtext">Монгол орны 21 аймагт 24/7 шуурхай хүргэлттэй. Дээд зэргийн материал, цэвэрхэн хийц.</p>
+              
+              <div class="stats-row">
+                <div class="stat-box">
+                  <span class="stat-num">21</span>
+                  <span class="stat-desc">Аймагт хүргэлт</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-num">24/7</span>
+                  <span class="stat-desc">Шуурхай үйлчилгээ</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-num">100%</span>
+                  <span class="stat-desc">Премиум чанар</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Light Feature Card (Inspired by Weekly/Month progress cards) -->
+            <div class="card card-light reveal">
+              <div class="card-header">
+                <h3>Signature Drop #01</h3>
+                <span class="tag-pill">+24% Trending</span>
+              </div>
+              <p class="muted-text">NestZ Essential Heavyweight Tee & Hoodie цуглуулга нээлтээ хийлээ.</p>
+              
+              <div class="featured-product-preview">
+                <div class="product-meta">
+                  <strong>NestZ Essential Edition</strong>
+                  <span>Олон улсын стандарт • Limited Stock</span>
+                </div>
+                <div class="product-price">$10.00 USD</div>
+              </div>
+
+              <div class="card-footer-actions">
+                <button class="pill-btn primary-pill full-width" data-route="checkout">Худалдан авах — $10 USD</button>
+                <button class="pill-btn outline-pill" data-route="about">Бидний тухай</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle Bento Row -->
+          <div class="bento-grid-mid">
+            <div class="card card-light reveal">
+              <h3>Брэндийн онцлог</h3>
+              <ul class="checklist">
+                <li><span class="check-box checked">✓</span> Биед эвтэйхэн 100% органик хөвөн даавуу</li>
+                <li><span class="check-box checked">✓</span> Өнгө алдахгүй, сунахгүй бат бөх оёдол</li>
+                <li><span class="check-box checked">✓</span> Улаанбаатар болон 21 аймагт 24/7 хүргэлт</li>
+                <li><span class="check-box checked">✓</span> Урамшуулалт Hoodie Giveaway хөтөлбөр</li>
+              </ul>
+            </div>
+
+            <div class="card card-light reveal">
+              <div class="card-header">
+                <h3>Шуурхай холбоос</h3>
+                <button class="text-link" data-route="contact">Холбоо барих →</button>
+              </div>
+              <div class="mini-cards-row">
+                <div class="mini-tile" data-route="about">
+                  <span class="tile-icon">✦</span>
+                  <strong>Our Genesis</strong>
+                  <small>Timeless Fashion</small>
+                </div>
+                <div class="mini-tile" data-route="checkout">
+                  <span class="tile-icon">⚡</span>
+                  <strong>Instant Checkout</strong>
+                  <small>PayPal & QPay</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Dark Cards Row (Inspired by Last Projects) -->
+          <div class="section-title-row reveal">
+            <h3>Сүүлийн үеийн цуглуулгууд</h3>
+          </div>
+          <div class="bento-grid-bottom">
+            <div class="card card-dark-compact reveal">
+              <div class="compact-top">
+                <h4>Monochrome Hoodie</h4>
+                <span class="ring-badge">New</span>
+              </div>
+              <p>• Бэлэн байгаа • Хар ба Цагаан өнгө</p>
+            </div>
+            <div class="card card-dark-compact reveal">
+              <div class="compact-top">
+                <h4>Oversized Heavy Tee</h4>
+                <span class="ring-badge">Top</span>
+              </div>
+              <p>• Бэлэн байгаа • 280 GSM даавуу</p>
+            </div>
+            <div class="card card-dark-compact reveal">
+              <div class="compact-top">
+                <h4>Minimalist Cap</h4>
+                <span class="ring-badge">VIP</span>
+              </div>
+              <p>• Хязгаарлагдмал тоотой</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== ABOUT PAGE ==================== -->
+        <section id="view-about" class="route-view">
+          <div class="bento-grid-top">
+            <div class="card card-light reveal">
+              <span class="card-eyebrow-dark">ABOUT NESTZ BRAND</span>
+              <h2 class="section-heading">Орчин үеийн минимал хэв маяг ба дээд зэргийн чанар.</h2>
+              <p class="body-text">
+                <strong>NestZ Brand</strong> нь өдөр тутмын хувцаслалтад тав тух, тансаг энгийн байдлыг хослуулах зорилготойгоор үүсгэн байгуулагдсан. Бид хэрэглэгчдэдээ цаг хугацааны шалгуурыг даах загвар, найдвартай 24/7 хүргэлтийн үйлчилгээг санал болгодог.
+              </p>
+            </div>
+
+            <!-- Our Genesis Section (Updated exact text as requested) -->
+            <div class="card card-dark reveal">
+              <span class="card-eyebrow">OUR GENESIS</span>
+              <h2 class="genesis-highlight">Timeless Fashion</h2>
+              <p class="hero-subtext">
+                Түр зуурын трендээс илүүтэй үргэлж үнэ цэнээ хадгалах сонгодог, цэвэрхэн хийцийг бид эрхэмлэдэг.
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-grid-bottom" style="margin-top: 20px;">
+            <div class="card card-light reveal">
+              <h4>Бидний Эрхэм Зорилго (Mission)</h4>
+              <p class="muted-text">Хэрэглэгч бүрт өөртөө итгэх итгэл, тав тухыг мэдрүүлэх олон улсын түвшний хувцас загварыг хүргэх.</p>
+            </div>
+            <div class="card card-light reveal">
+              <h4>Үнэт Зүйлс (Values)</h4>
+              <p class="muted-text">Чанартай материал, шударга үнэ, 21 аймагт хүрэх хурдтай логистик үйлчилгээ.</p>
+            </div>
+            <div class="card card-light reveal">
+              <h4>Хамт Олон (Community)</h4>
+              <p class="muted-text">Залуусын чөлөөт сэтгэлгээ, бүтээлч хэв маягийг дэмжигч NestZ нэгдэл.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== CONTACT PAGE ==================== -->
+        <section id="view-contact" class="route-view">
+          <div class="bento-grid-top">
+            <div class="card card-light reveal">
+              <span class="card-eyebrow-dark">GET IN TOUCH</span>
+              <h2 class="section-heading">Бидэнтэй холбогдох</h2>
+              <p class="muted-text">Захиалга, хүргэлт болон хамтын ажиллагааны талаар асуух зүйл байвал доорх формоор илгээнэ үү.</p>
+
+              <!-- FormSubmit.co Wired Contact Form -->
+              <form id="contactForm" class="styled-form" novalidate>
+                <!-- Honeypot field for spam protection -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <!-- Disable reCAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                  <label for="contactName">Name (Таны нэр)</label>
+                  <input type="text" id="contactName" name="name" placeholder="Нэрээ оруулна уу..." required />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail">Email (Имэйл хаяг)</label>
+                  <input type="email" id="contactEmail" name="email" placeholder="name@example.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Message (Зурвас)</label>
+                  <textarea id="contactMessage" name="message" rows="4" placeholder="Таны зурвас..." required></textarea>
+                </div>
+
+                <button type="submit" class="pill-btn primary-pill full-width" id="contactSubmitBtn">
+                  Зурвас илгээх
+                </button>
+
+                <div id="formFeedback" class="form-feedback hidden" role="status"></div>
+              </form>
+            </div>
+
+            <div class="card card-dark reveal">
+              <span class="card-eyebrow">DIRECT CHANNELS</span>
+              <h3 style="margin: 12px 0;">Шууд холбоо барих сувгууд</h3>
+              <p class="hero-subtext">Бид 24/7 таны асуултад хариулахад бэлэн байна.</p>
+              
+              <div class="contact-info-list">
+                <a href="tel:+9768847922*" class="contact-item">
+                  <span>Утас:</span>
+                  <strong>+9768847922*</strong>
+                </a>
+                <a href="https://www.facebook.com/share/1DSeUo43az/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <span>Facebook:</span>
+                  <strong>NestZ Brand Official ↗</strong>
+                </a>
+                <a href="https://www.instagram.com/nestz.brand?bqrl=bnR1OXF6bWRuaGRy&utm_source=qr" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <span>Instagram:</span>
+                  <strong>@nestz.brand ↗</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== CHECKOUT PAGE ==================== -->
+        <section id="view-checkout" class="route-view">
+          <div class="bento-grid-top">
+            <div class="card card-light reveal">
+              <span class="card-eyebrow-dark">SECURE CHECKOUT</span>
+              <h2 class="section-heading">Захиалга баталгаажуулах</h2>
+              
+              <div class="order-summary-box">
+                <div class="order-line">
+                  <span>NestZ Signature Drop (One-Time)</span>
+                  <strong>$10.00 USD</strong>
+                </div>
+                <div class="order-line">
+                  <span>21 Аймагт 24/7 Хүргэлт</span>
+                  <span class="tag-pill">Үнэгүй</span>
+                </div>
+                <hr class="divider" />
+                <div class="order-line total-line">
+                  <span>Нийт төлөх дүн</span>
+                  <strong>$10.00 USD</strong>
+                </div>
+              </div>
+
+              <div class="payment-methods-container">
+                <p class="muted-text" style="margin-bottom: 12px;">Төлбөрийн хэрэгслээ сонгоно уу:</p>
+                
+                <!-- Official PayPal Button Container -->
+                <div id="paypal-button-container"></div>
+
+                <!-- QPay Checkout Option -->
+                <button type="button" id="qpayCheckoutBtn" class="qpay-btn">
+                  <span class="qpay-badge">QPay</span> QPay-ээр төлөх ($10 USD / ~34,500₮)
+                </button>
+
+                <div id="paymentStatusMsg" class="form-feedback hidden"></div>
+              </div>
+            </div>
+
+            <!-- QPay Interactive Modal / Card Preview -->
+            <div class="card card-dark reveal" id="qpayPanel">
+              <span class="card-eyebrow">FAST & SECURE</span>
+              <h3 style="margin: 12px 0;">PayPal болон QPay баталгаат төлбөр</h3>
+              <p class="hero-subtext">
+                Төлбөр амжилттай баталгаажмагц таны гүйлгээний баримт автоматаар хадгалагдаж, Баярлалаа (Thank You) хуудас руу шилжих болно.
+              </p>
+              <div id="qpayQrBox" class="qpay-qr-box hidden">
+                <div class="qr-placeholder">
+                  <span>[ QPay QR Нэхэмжлэх ]</span>
+                  <small>Дүн: $10.00 USD</small>
+                </div>
+                <button type="button" id="confirmQpayMockBtn" class="pill-btn primary-pill full-width" style="margin-top:12px;">
+                  Төлбөр шалгах / Баталгаажуулах
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== THANK YOU PAGE ==================== -->
+        <section id="view-thankyou" class="route-view">
+          <div class="card card-light reveal" style="max-width: 640px; margin: 0 auto; text-align: center;">
+            <div class="success-icon-circle">✓</div>
+            <h2 class="section-heading">Төлбөр амжилттай төлөгдлөө!</h2>
+            <p class="muted-text">NestZ Brand-ийг сонгон үйлчлүүлсэн танд баярлалаа. Таны захиалга бүртгэгдлээ.</p>
+            
+            <div class="receipt-card" id="transactionReceipt">
+              <!-- Populated dynamically via JS -->
+            </div>
+
+            <button class="pill-btn primary-pill" data-route="home" style="margin-top: 20px;">
+              Нүүр хуудас руу буцах
+            </button>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Footer with Explicit Home & About Links -->
+      <footer class="app-footer">
+        <div class="footer-left">
+          <span>© 2026 <strong>NestZ Brand</strong>. All rights reserved.</span>
+        </div>
+        <div class="footer-links">
+          <a href="#home" data-route="home">Home</a>
+          <a href="#about" data-route="about">About</a>
+          <a href="#contact" data-route="contact">Contact</a>
+          <a href="https://www.facebook.com/share/1DSeUo43az/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/nestz.brand?bqrl=bnR1OXF6bWRuaGRy&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Floating Gemini Chatbot Widget -->
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chat-window hidden" id="chatWindow" role="dialog" aria-label="NestZ AI Assistant">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <span class="chat-avatar">N</span>
+          <div>
+            <strong>NestZ Assistant</strong>
+            <small>Online • AI Туслах</small>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatCloseBtn" aria-label="Close chat">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot-msg">
+          Сайн байна уу таньд юугаар туслах вэ?
+        </div>
+      </div>
+
+      <form class="chat-input-form" id="chatForm">
+        <input 
+          type="text" 
+          id="chatInput" 
+          placeholder="Асуултаа бичнэ үү..." 
+          autocomplete="off" 
+          required 
+        />
+        <button type="submit" id="chatSendBtn" aria-label="Send message">➤</button>
+      </form>
+    </div>
+
+    <button class="chat-toggle-btn" id="chatToggleBtn" aria-label="Open AI Chat">
+      💬
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
